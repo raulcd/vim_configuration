@@ -1,0 +1,24 @@
+diff --git a/plugin/pep8.vim b/plugin/pep8.vim
+index 3b59700..fce0b50 100644
+--- a/plugin/pep8.vim
++++ b/plugin/pep8.vim
+@@ -30,11 +30,10 @@ function! <SID>Pep8()
+   redraw!
+   let tlist=getqflist() ", 'get(v:val, ''bufnr'')')
+   if empty(tlist)
+-	  if !hlexists('GreenBar')
+-		  hi GreenBar term=reverse ctermfg=white ctermbg=darkgreen guifg=white guibg=darkgreen
+-	  endif
++          redraw
++	  hi GreenBar ctermfg=black ctermbg=green guibg=green
+ 	  echohl GreenBar
+-	  echomsg "PEP8 correct"
++	  echomsg "PEP8 correct!!! You Rock!!!"
+ 	  echohl None
+ 	  cclose
+   endif
+@@ -53,4 +52,3 @@ else
+           \ g:pep8_map ." is taken and a replacement was not assigned."
+   endif
+ endif
+-
