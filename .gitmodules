@@ -49,6 +49,3 @@
 [submodule "bundle/vim-virtualenv"]
 	path = bundle/vim-virtualenv
 	url = https://github.com/jmcantrell/vim-virtualenv
-[submodule "bundle/bundle/jedi-vim"]
-	path = bundle/bundle/jedi-vim
-	url = https://github.com/davidhalter/jedi-vim
